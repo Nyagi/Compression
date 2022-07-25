@@ -331,16 +331,6 @@ hash = "ba1a0228e04fb27488f75c7090afb83d89d0bb7ade0638207c2459afd77ede7d"
 metafile = true
 
 [[files]]
-file = "mods/projecte.pw.toml"
-hash = "824ad9a385cce61265f09bbc1eb1666756a8ba84a3870e4bed9a92b5ce7a70f8"
-metafile = true
-
-[[files]]
-file = "mods/projectextended.pw.toml"
-hash = "4113f71e47f384945511ec1555893bde2626878b902db560ce1c699dbb69046a"
-metafile = true
-
-[[files]]
 file = "mods/random-sheep-colours.pw.toml"
 hash = "444a62b6a9d202309a05b715864a3e5e5a492b723c1d9cb6d41217c3e366a41c"
 metafile = true
