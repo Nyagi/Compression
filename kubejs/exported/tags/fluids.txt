@@ -1,0 +1,232 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jul 24, 2022, 9:12:14 PM
+
+#forge:oxygen
+- mekanism:oxygen
+- mekanism:flowing_oxygen
+
+#minecraft:water
+- minecraft:water
+- minecraft:flowing_water
+- create:flowing_honey
+- create:honey
+- create:flowing_chocolate
+- create:chocolate
+- createchromaticreturn:shadow_essence
+- createchromaticreturn:flowing_shadow_essence
+- createchromaticreturn:liquid_experience
+- createchromaticreturn:flowing_liquid_experience
+- createchromaticreturn:refined_mixture
+- createchromaticreturn:flowing_refined_mixture
+
+#forge:biodiesel
+- pneumaticcraft:biodiesel
+- immersiveengineering:biodiesel
+
+#forge:milk
+- minecraft:milk?
+- minecraft:flowing_milk?
+
+#forge:uranium_hexafluoride
+- mekanism:uranium_hexafluoride
+- mekanism:flowing_uranium_hexafluoride
+
+#forge:sulfur_dioxide
+- mekanism:sulfur_dioxide
+- mekanism:flowing_sulfur_dioxide
+
+#forge:hydrogen
+- mekanism:hydrogen
+- mekanism:flowing_hydrogen
+
+#create:bottomless/deny
+
+#create:bottomless/allow
+- minecraft:water
+- minecraft:lava
+
+#forge:superheated_sodium
+- mekanism:superheated_sodium
+- mekanism:flowing_superheated_sodium
+
+#forge:steam
+- mekanism:steam
+- mekanism:flowing_steam
+
+#forge:experience
+- sophisticatedcore:xp_still
+- pneumaticcraft:memory_essence
+- cofh_core:experience
+
+#forge:glowstone
+- thermal:glowstone
+
+#forge:lithium
+- mekanism:lithium
+- mekanism:flowing_lithium
+
+#forge:diesel
+- pneumaticcraft:diesel
+
+#ae2:blacklisted/annihilation_plane
+
+#immersiveengineering:drill_fuel
+- #forge:biodiesel
+
+#pneumaticcraft:plastic
+- pneumaticcraft:plastic
+
+#pneumaticcraft:etching_acid
+- pneumaticcraft:etching_acid
+
+#forge:kerosene
+- pneumaticcraft:kerosene
+
+#forge:creosote
+- thermal:creosote
+- immersiveengineering:creosote
+
+#forge:heavy_water
+- mekanism:heavy_water
+- mekanism:flowing_heavy_water
+
+#forge:lpg
+- pneumaticcraft:lpg
+
+#forge:lubricant
+- pneumaticcraft:lubricant
+
+#forge:crude_oil
+- pneumaticcraft:oil
+- thermal:crude_oil
+
+#forge:redstone
+- thermal:redstone
+
+#forge:herbicide
+- immersiveengineering:herbicide
+
+#pneumaticcraft:seismic_sensor_interesting
+- #forge:crude_oil
+
+#forge:plantoil
+- pneumaticcraft:vegetable_oil
+- immersiveengineering:plantoil
+
+#minecraft:lava
+- minecraft:lava
+- minecraft:flowing_lava
+
+#forge:ethene
+- mekanism:ethene
+- mekanism:flowing_ethene
+
+#forge:ethanol
+- pneumaticcraft:ethanol
+- immersiveengineering:ethanol
+
+#forge:uranium_oxide
+- mekanism:uranium_oxide
+- mekanism:flowing_uranium_oxide
+
+#forge:chocolate
+- create:flowing_chocolate
+- create:chocolate
+
+#forge:chlorine
+- mekanism:chlorine
+- mekanism:flowing_chlorine
+
+#forge:redstone_acid
+- immersiveengineering:redstone_acid
+
+#forge:sodium
+- mekanism:sodium
+- mekanism:flowing_sodium
+
+#forge:concrete
+- immersiveengineering:concrete
+
+#forge:potion
+- cofh_core:potion
+- immersiveengineering:potion
+
+#forge:sulfur_trioxide
+- mekanism:sulfur_trioxide
+- mekanism:flowing_sulfur_trioxide
+
+#forge:sulfuric_acid
+- mekanism:sulfuric_acid
+- mekanism:flowing_sulfuric_acid
+
+#forge:gasoline
+- pneumaticcraft:gasoline
+
+#forge:ender
+- thermal:ender
+
+#forge:hydrogen_chloride
+- mekanism:hydrogen_chloride
+- mekanism:flowing_hydrogen_chloride
+
+#forge:tea
+- create:flowing_tea
+- create:tea
+
+#pneumaticcraft:yeast_culture
+- pneumaticcraft:yeast_culture
+
+#forge:hydrofluoric_acid
+- mekanism:hydrofluoric_acid
+- mekanism:flowing_hydrofluoric_acid
+
+#forge:brine
+- mekanism:brine
+- mekanism:flowing_brine
+
+#forge:latex
+- thermal:latex
+
+#forge:honey
+- cofh_core:honey
+- create:flowing_honey
+- create:honey
+- productivebees:honey
+- productivebees:flowing_honey
+
+#create:no_infinite_draining
+- mekanism:hydrogen
+- mekanism:flowing_hydrogen
+- mekanism:oxygen
+- mekanism:flowing_oxygen
+- mekanism:chlorine
+- mekanism:flowing_chlorine
+- mekanism:sulfur_dioxide
+- mekanism:flowing_sulfur_dioxide
+- mekanism:sulfur_trioxide
+- mekanism:flowing_sulfur_trioxide
+- mekanism:sulfuric_acid
+- mekanism:flowing_sulfuric_acid
+- mekanism:hydrogen_chloride
+- mekanism:flowing_hydrogen_chloride
+- mekanism:hydrofluoric_acid
+- mekanism:flowing_hydrofluoric_acid
+- mekanism:uranium_oxide
+- mekanism:flowing_uranium_oxide
+- mekanism:uranium_hexafluoride
+- mekanism:flowing_uranium_hexafluoride
+- mekanism:ethene
+- mekanism:flowing_ethene
+- mekanism:sodium
+- mekanism:flowing_sodium
+- mekanism:superheated_sodium
+- mekanism:flowing_superheated_sodium
+- mekanism:brine
+- mekanism:flowing_brine
+- mekanism:lithium
+- mekanism:flowing_lithium
+- mekanism:steam
+- mekanism:flowing_steam
+- mekanism:heavy_water
+- mekanism:flowing_heavy_water
+- mekanism:nutritional_paste
+- mekanism:flowing_nutritional_paste
