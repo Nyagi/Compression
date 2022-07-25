@@ -15,7 +15,7 @@ onEvent('block.registry', event => {
 
 
 //Items
-	//Internal catagorization for pack "science" progression
+	//Internal names for pack "science" progression
 	let kits = [
 		//electromagnetic
 			'static',
@@ -71,11 +71,11 @@ onEvent('block.registry', event => {
 			'reversing',
 			'end',
 	]
+	//Internal names for data combining
 //auto item builder
+//testing kits
 onEvent('item.registry', event => {
 	kits.forEach(kit => {
-		event.create(kit + '_testing_kit')
-		event.create('used_' + kit + '_testing_kit')
 			event.create('crude_' + kit + '_testing_kit')
 			event.create('used_crude_' + kit + '_testing_kit')
 			event.create('basic_' + kit + '_testing_kit')
@@ -88,6 +88,22 @@ onEvent('item.registry', event => {
 			event.create('used_simulated_' + kit + '_testing_kit')
 	  })
 	})
+//Data Devices
+onEvent('item.registry', event => {
+	//Internal names for data recording devices
+		event.create('empty_lab_notebook')
+		event.create('empty_encyclopedia')
+		event.create('un-punched_cards')
+		event.create('empty_flash_drive')
+		event.create('empty_data_cell')
+		event.create('un-etched_memory_cell')
+		event.create('untunned_qbit_chip')
+		event.create('empty_flake_encoder')
+		event.create('un-enscribed_blachole_holographic_cell')
+	//Internal names for condensed knowledge
+		event.create('small_pile_of_knowledge')
+		event.create('empty_lab_notebook')
+})
 
 //Blocks
   onEvent('block.registry', event => {
@@ -100,6 +116,8 @@ onEvent('item.registry', event => {
 		 .tagBlock('minecraft:mineable/pickaxe')
 		 .requiresTool(true)
 		 .harvestTool('pickaxe', 10) 
+  })
+  onEvent('block.registry', event => {
 	//Cracked Flake
 	event.create('flake_cracked')
 		 .material('metal')
