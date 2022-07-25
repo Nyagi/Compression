@@ -1,0 +1,13 @@
+name = "Flywheel"
+filename = "flywheel-forge-1.18-0.6.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "217950cfa3f4f5a148021c79569d2ce251b77524"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3871082
+project-id = 486392

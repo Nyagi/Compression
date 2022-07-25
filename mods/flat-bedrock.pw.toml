@@ -1,0 +1,13 @@
+name = "Flat Bedrock"
+filename = "flatbedrock-1.4.2-build.10+mc1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39a388716da1f95f69822fcad20d3483e871024a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3788448
+project-id = 398623

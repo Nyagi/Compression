@@ -1,0 +1,13 @@
+name = "Random Sheep Colours (Forge)"
+filename = "randomsheepcolours_1.18.2-1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bd6aa3a738c85a900f475094c8ceefd53768f01c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3669178
+project-id = 390873
