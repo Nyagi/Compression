@@ -301,6 +301,16 @@ hash = "78914bd3f7fca6465faf3d74a1078473df567274b252624e267d88bcd145edf0"
 metafile = true
 
 [[files]]
+file = "mods/oh-the-biomes-youll-go.pw.toml"
+hash = "e2dcae26c1573da28b92ceee6b422b01ce11de34576c344fcfc7fa113d882dcf"
+metafile = true
+
+[[files]]
+file = "mods/open-loader.pw.toml"
+hash = "3572115ea9aaec0360f662d919366d7d70be7d0a6d0169bfff05b781dda3899f"
+metafile = true
+
+[[files]]
 file = "mods/patchouli.pw.toml"
 hash = "ae4c3617170709ac560c8113f1526193e79750735d12bbc2d5119f518b866799"
 metafile = true
@@ -388,6 +398,11 @@ metafile = true
 [[files]]
 file = "mods/technicalities-lib.pw.toml"
 hash = "86fe425015095ea6cc0ae811061310b2fbe1b4988f7b298b7252aea3e2f40574"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "0d6b8b85af3b07f28bb3ffd3bb01c9f82ee79f7a9da7db84c321bcd5d56a1e7c"
 metafile = true
 
 [[files]]
