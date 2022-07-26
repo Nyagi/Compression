@@ -584,11 +584,6 @@ hash = "8d6fa1344137f614fdaedb29746df0ae33dee92ffdaf9ec37a0bb1501458e13b"
 metafile = true
 
 [[files]]
-file = "mods/jei.pw.toml"
-hash = "3e6d5d17bdaa70ae054b4ee2ed06fdad1f9b56cce452af0105d2956ea239a7da"
-metafile = true
-
-[[files]]
 file = "mods/kubejs-botania.pw.toml"
 hash = "91483dcc3e32ac337c5ac3463587f23109c3932f681c4562e7b5f3187bd84c31"
 metafile = true
@@ -691,6 +686,16 @@ metafile = true
 [[files]]
 file = "mods/rhino.pw.toml"
 hash = "6060f946f071cec9b66f96040bf36901241bce5e1d1de7bf2ba485dbea83df98"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-items-hacks.pw.toml"
+hash = "75682dbed1d3c96a8a7268ca480ea7d8d40c0c93b42ef9d1dafc9504a41f891a"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-items.pw.toml"
+hash = "378fa45e789540d217297ca6a89d546e8bfa049d7d35ddc4b692eab121990fc2"
 metafile = true
 
 [[files]]
