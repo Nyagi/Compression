@@ -34,6 +34,14 @@ onEvent('recipes', event => {
             },
             time: 1200 // int, specifies the amount of ticks a blockspace has to receive to convert into the output state - optional
         })
-        
+    //Andesite Alloy
+    event.remove({output: 'create:andesite_alloy'})
+    event.shaped('create:andesite_alloy', [
+      'AB',
+      'BA'
+    ], {
+      A: 'kubejs:living_andesite',
+      B: 'minecraft:iron_nugget'
+    })
   })
 
