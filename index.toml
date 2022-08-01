@@ -5,7 +5,7 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/test_block.png"
+file = "kubejs/assets/kubejs/textures/block/flake.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
 
 [[files]]
@@ -23,6 +23,10 @@ hash = "87f36821a3a7ac89c1b30b3d8bc51700ad55a7d4930580129bbe8aff69a99451"
 [[files]]
 file = "kubejs/config/common.properties"
 hash = "2786ab46dcef0f067ce452cb8a78935b4486d0a29abc7c00bacca2cb25c2e194"
+
+[[files]]
+file = "kubejs/data/minecraft/dimension/overworld.json"
+hash = "d9ef8fd76cde2fdd8722e3aa79fd27f6a4c4924e6c48f7a368954d7c6eb3edac"
 
 [[files]]
 file = "kubejs/exported/tags/activity.txt"
