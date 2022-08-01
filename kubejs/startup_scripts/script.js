@@ -106,6 +106,60 @@ onEvent('item.registry', event => {
 		event.create('empty_lab_notebook')
 })
 
+//OreProcessing Chain Items
+   let metalStages = [
+	//create crushing
+	'crushed',
+	//bee
+	'impregnated',
+	//orechild
+	'imbued',
+	//pneumatic
+	'etched',
+	//mystic
+	'enchanted',
+	//immersive
+	'stintered',
+	//conjuration
+	'replicated',
+	//matter compressor + miniturization
+	'compacted',
+	//DML
+	'simulated',
+	//alchemistry
+	'atomized',
+	//mek-nuc
+	'fissile',
+	//ae-singularity
+	'schwarzschild',
+	//botania-runic
+	'rune-etched',
+	//alch-fusion
+	'star-forged',
+	//bota+antimatter+ton of other shit to add later
+	'infinite'
+
+   ]
+   let metals = [
+	'iron',
+	'copper',
+	'gold',
+	'tin',
+	'lead',
+	'silver',
+	'nickle',
+	'zinc',
+	'uranium',
+	'osmium'
+   ]
+onEvent('item.registry', event => {
+	metalStages.forEach(stage => {
+		metals.forEach(material => {
+		  event.create(stage + '_' + material)
+		})
+	  })
+	})
+
 //Blocks
   onEvent('block.registry', event => {
 	//Flake
