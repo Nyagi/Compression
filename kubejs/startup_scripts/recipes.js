@@ -14,6 +14,9 @@ onEvent('recipes', event => {
     //Remove LivingWood Tools
     event.remove({output: 
         [Item.of('aiotbotania:livingwood_shears', '{Damage:0}'), Item.of('aiotbotania:livingwood_sword', '{Damage:0}'), Item.of('aiotbotania:livingwood_axe', '{Damage:0}'), Item.of('aiotbotania:livingwood_pickaxe', '{Damage:0}'), Item.of('aiotbotania:livingwood_shovel', '{Damage:0}'), Item.of('aiotbotania:livingwood_hoe', '{Damage:0}'), Item.of('aiotbotania:livingwood_aiot', '{Damage:0}')]})
+    //Remove Wood/Stone Tools
+    event.remove({output: 
+        [Item.of('minecraft:wooden_sword', '{Damage:0}'), Item.of('minecraft:wooden_shovel', '{Damage:0}'), Item.of('minecraft:wooden_pickaxe', '{Damage:0}'), Item.of('minecraft:wooden_axe', '{Damage:0}'), Item.of('minecraft:wooden_hoe', '{Damage:0}'), Item.of('minecraft:stone_sword', '{Damage:0}'), Item.of('minecraft:stone_shovel', '{Damage:0}'), Item.of('minecraft:stone_pickaxe', '{Damage:0}'), Item.of('minecraft:stone_axe', '{Damage:0}'), Item.of('minecraft:stone_hoe', '{Damage:0}')]})
     //Petal Apothecary Recipes
         //PureDaisy
         event.remove({output: 'botania:pure_daisy'})
