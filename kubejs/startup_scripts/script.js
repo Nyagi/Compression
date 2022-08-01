@@ -23,6 +23,7 @@ onEvent('block.registry', event => {
 			'conductive',
 			'resistance',
 		//destructive
+			'compaction',
 			'piercing',
 			'high_velocity',
 			'shockwave',
