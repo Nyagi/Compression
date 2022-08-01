@@ -463,11 +463,6 @@ hash = "6547b4efe1ad791a84b6e7d68f99e3282a2c714a35e8021e94430a2675ec095f"
 metafile = true
 
 [[files]]
-file = "mods/compact-machines.pw.toml"
-hash = "5b9cc9e7cd001e5fee2873404b37b23b3b82224fdc508069337d7c1cee4692b0"
-metafile = true
-
-[[files]]
 file = "mods/compressedcreativity.pw.toml"
 hash = "e4138073060de1eb67f1325aa9516c3d1063f5012371ec41cc7e00df8e45562e"
 metafile = true
