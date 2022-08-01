@@ -161,8 +161,8 @@ onEvent('item.registry', event => {
 	})
 
 //Blocks
+  //Flake
   onEvent('block.registry', event => {
-	//Flake
 	event.create('flake')
 		   .material('metal')
 		 .hardness(3000)
@@ -172,8 +172,8 @@ onEvent('item.registry', event => {
 		 .requiresTool(true)
 		 .harvestTool('pickaxe', 10) 
   })
+  //CrackedFlake
   onEvent('block.registry', event => {
-	//Cracked Flake
 	event.create('flake_cracked')
 		 .material('metal')
 	   .hardness(500)
@@ -182,4 +182,15 @@ onEvent('item.registry', event => {
 	   .tagBlock('minecraft:mineable/pickaxe')
 	   .requiresTool(true)
 	   .harvestTool('pickaxe', 10) 
+  })
+  //Living Andesite
+  onEvent('block.registry', event => {
+	event.create('living_andesite')
+		 .material('stone')
+	   .hardness(1.5)
+	   .resistance(6)
+	   .displayName('Livisite')
+	   .tagBlock('minecraft:mineable/pickaxe')
+	   .requiresTool(true)
+	   .harvestTool('pickaxe', 1) 
   })

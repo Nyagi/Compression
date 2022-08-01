@@ -1,0 +1,13 @@
+name = "Compact Crafting"
+filename = "compactcrafting-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "83b01d671baaf7514a68a50a1e1f80f2881c90b5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3898668
+project-id = 429735
