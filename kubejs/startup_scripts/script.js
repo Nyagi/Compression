@@ -70,7 +70,7 @@ onEvent('block.registry', event => {
 			'hyper_dimensional_bridges',
 			'infinite_feedback_loops',
 			'reversing',
-			'end',
+			'end'
 	]
 	//Internal names for data combining
 //auto item builder
@@ -106,16 +106,20 @@ onEvent('item.registry', event => {
 		'enscribed_blackhole_holographic_cell'
 	]
 //Everything else to do with lab stuff
-onEvent('item.registry', event => {
-	emptylabRecording.forEach(i => {
-		event.create('empty_' + emptylabRecording)
-		event.create(emptylabRecording + '_with_' + kits + '_data')
-	})	
-	unLabRecording.forEach(j => {
-		event.create('un_-_'+ unLabRecording)
-		event.create(unLabRecording + '_with_' + kits + '_data')
-	})
-})
+onEvent('item.registry', function(event) {
+    for(let i = 0; i < unLabRecording.length; i++) {
+        event.create('un'+ unLabRecording[i]);
+        for(let j = 0; j < kits.length; j++) {
+            event.create(unLabRecording[i] + '_with_' + kits[j] + '_data');
+        };
+    };
+    for( let i = 0; i < emptylabRecording.length; i++) {
+        event.create('empty_' + emptylabRecording[i]);
+        for(let j = 0; j < kits.length; j++) {
+            event.create(emptylabRecording[i] + '_with_' + kits[j] + '_data');
+        };
+    };
+});
 	
 	    /*
 		event.create('empty_lab_notebook')
