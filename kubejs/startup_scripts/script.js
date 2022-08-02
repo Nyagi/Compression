@@ -89,9 +89,35 @@ onEvent('item.registry', event => {
 			event.create('used_simulated_' + kit + '_testing_kit')
 	  })
 	})
+
+
+	//Internal names for data recording devices
+	let emptylabRecording = [
+		'lab_notebook', 
+		'encyclopedia',
+		'flash_drive',
+		'data_cell',
+		'flake_encoder'
+	]
+	let unLabRecording = [
+		'punched_cards', 
+		'etched_memory_cell',
+		'tunned_qbit_chip',
+		'enscribed_blackhole_holographic_cell'
+	]
 //Everything else to do with lab stuff
 onEvent('item.registry', event => {
-	//Internal names for data recording devices
+	emptylabRecording.forEach(i => {
+		event.create('empty_' + emptylabRecording)
+		event.create(emptylabRecording + '_with_' + kits + '_data')
+	})	
+	unLabRecording.forEach(j => {
+		event.create('un_-_'+ unLabRecording)
+		event.create(unLabRecording + '_with_' + kits + '_data')
+	})
+})
+	
+	    /*
 		event.create('empty_lab_notebook')
 		event.create('empty_encyclopedia')
 		event.create('un-punched_cards')
@@ -104,7 +130,8 @@ onEvent('item.registry', event => {
 	//Internal names for condensed knowledge
 		event.create('small_pile_of_knowledge')
 		event.create('empty_lab_notebook')
-})
+		*/
+
 onEvent('item.registry', event => {
 	event.create('sturdy_wooden_box')
 	event.create('iron_piston_head')

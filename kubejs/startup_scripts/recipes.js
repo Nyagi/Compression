@@ -185,24 +185,13 @@ onEvent('recipes', event => {
       event.smelting('kubejs:crude_entropy_testing_kit', 'kubejs:used_crude_entropy_testing_kit')
     //Create Assembly Line
       //Static-Test
-      /*
-      event.recipes.createSequencedAssembly([ // start the recipe
-        Item.of('6x create:large_cogwheel').withChance(32.0), // have this item be an output with a certain chance
-        Item.of('create:brass_ingot').withChance(2.0), // have this item be an output with a certain chance
-            'minecraft:andesite', // have this item be a guaranteed output
-            'create:cogwheel', // have this item be a guaranteed output
-            'minecraft:stick', // have this item be a guaranteed output
-            'minecraft:iron_nugget' // have this item be a guaranteed output
-            ], 'kubejs:crude_entropy_testing_kit', [ // 'create:brass_ingot' is the input.
-            // the transitional item set by "transitionalItem('create:incomplete_large_cogwheel')" is the item that will be used during the recipe as the item that the input is using to transition to the output.
-            event.recipes.createDeploying
-                ('create:incomplete_large_cogwheel', ['create:incomplete_large_cogwheel', '#minecraft:planks']), // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
-            event.recipes.createDeploying
-                ('create:incomplete_large_cogwheel', ['create:incomplete_large_cogwheel', '#minecraft:wooden_buttons']), // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
-            event.recipes.createCutting
-                ('create:incomplete_large_cogwheel', 'create:incomplete_large_cogwheel').processingTime(50) // like a normal recipe function, is used as a sequence step in this array. Input and output have the transitional item
-]).transitionalItem('create:incomplete_large_cogwheel').loops(4) // set the transitional item and the loops (amount of repetitions)
-*/   
+      event.recipes.createSequencedAssembly(
+        ["minecraft :dirt"], //result items
+        [
+          event.recipes.deploying('kubejs:custom1' /*will output custom1*/, ['kubejs:custom1' /*will have custom1 as input*/, 'minecraft:gravel']), //the custom1 here is a transitional item, its data will change with the recipe and it will hold the assembly line process, that's why it's the input and output of all the recipes on the line
+          event.recipes.createCutting('kubejs:custom1', 'kubejs:custom1') //it's also the input and output here for the same reasons, this thing will actually create a bunch of recipes for individual machines and different data
+        ]).transitionalItem('kubejs:custom1') //we tell it here that this is the transitional item
+  
 }) 
 
 
