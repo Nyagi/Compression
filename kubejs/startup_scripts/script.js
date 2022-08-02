@@ -179,10 +179,8 @@ onEvent('block.registry', event => {
 		 .displayName('Flake')
 		 .tagBlock('minecraft:mineable/pickaxe')
 		 .requiresTool(true)
-		 .harvestTool('pickaxe', 10) 
-		 setBlockstateJson({
-			 "variants": [{model: "kubejs:flake"}, {model: "kubejs:flake", y:90, x:90}, {model: "kubejs:flake", y:180}, {model: "kubejs:flake", y:270,x:90}])
-		 })
+		 .harvestTool('pickaxe', 10)
+		 setBlockstateJson({variants: [{model: "kubejs:flake"}, {model: "kubejs:flake", y:90, x:90}, {model: "kubejs:flake", y:180}, {model: "kubejs:flake", y:270,x:90}]})
   //CrackedFlake
 	event.create('flake_cracked')
 		 .material('metal')
