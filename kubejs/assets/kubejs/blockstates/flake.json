@@ -1,0 +1,18 @@
+{
+	"variants": {
+		"" : [
+			{
+				"model": "kubejs:block/flake"
+			},
+			{
+				"model": "kubejs:block/flake", "y":90, "x":90
+			},
+			{
+				"model": "kubejs:block/flake", "y":180
+			},
+			{
+				"model": "kubejs:block/flake", "y":270, "x":90
+			}
+		]
+	}
+}

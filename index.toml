@@ -9,6 +9,14 @@ file = "kubejs/assets/create/textures/item/andesite_alloy.png"
 hash = "91571f5f8372762f52d982e5f18ead802f2848efbd2f56058dfb2e9bf84f755b"
 
 [[files]]
+file = "kubejs/assets/kubejs/blockstates/flake.json"
+hash = "d98a5c67cf98f317e0ac2c9656181487ac3f33983e52522b659a76a43b4c9dd5"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/block/flake.json"
+hash = "03da453c762f67cc6ab98dbb03bd44606fa81e27058c470f5c53a7626062c4d9"
+
+[[files]]
 file = "kubejs/assets/kubejs/models/flake.json"
 hash = "b543c5552a5a9f8d5578673f30c21e877dbdf4f02202f92e2c532b8616c54216"
 
@@ -17,16 +25,16 @@ file = "kubejs/assets/kubejs/textures/block/flake.xcf"
 hash = "63def444765c000122ac3d43ae12bf77e37e8a881aad8dff5ea408a2f9750ac5"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/flake_inside.mcmeta"
-hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/block/flake_inside.png"
 hash = "9b1e0fc86a19e3ee4ba968402a8f58f09a0e43e709aa6824da9d1fe20e7dba2c"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/flake_inside.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/flake_outside.png"
-hash = "f820873d0a050b703a6108df135be72764654989f2046a91b3876f2c0ce4c0d6"
+hash = "32d27712c16b55641e205ade5dbfaadef160324fa26f092c81728ea0f153751c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/living_andesite.png"
@@ -378,7 +386,7 @@ hash = "ea0faf245820b412cd5e81c98f58a88a3237a0caa360af291d327088e871eb47"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "859d712a01af0e3d07a97d495c40a5709f1f93cde9b04791f633c3252ce14a40"
+hash = "e86538f1fd6bd22ce2f281056984a305cd6edccc79b7985f6a6b00fd0c4bde7a"
 
 [[files]]
 file = "mods/aeinfinitybooster.pw.toml"
