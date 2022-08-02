@@ -167,11 +167,11 @@ onEvent('item.registry', event => {
 		  event.create(stage + '_' + material)
 		})
 	  })
-	})
+})
 
 //Blocks
-  //Flake
-  onEvent('block.registry', event => {
+onEvent('block.registry', event => {
+	//Flake
 	event.create('flake')
 		   .material('metal')
 		 .hardness(3000)
@@ -180,9 +180,10 @@ onEvent('item.registry', event => {
 		 .tagBlock('minecraft:mineable/pickaxe')
 		 .requiresTool(true)
 		 .harvestTool('pickaxe', 10) 
-  })
+		 setBlockstateJson({
+			 "variants": [{model: "kubejs:flake"}, {model: "kubejs:flake", y:90, x:90}, {model: "kubejs:flake", y:180}, {model: "kubejs:flake", y:270,x:90}])
+		 })
   //CrackedFlake
-  onEvent('block.registry', event => {
 	event.create('flake_cracked')
 		 .material('metal')
 	   .hardness(500)
@@ -191,9 +192,7 @@ onEvent('item.registry', event => {
 	   .tagBlock('minecraft:mineable/pickaxe')
 	   .requiresTool(true)
 	   .harvestTool('pickaxe', 10) 
-  })
   //Living Andesite
-  onEvent('block.registry', event => {
 	event.create('living_andesite')
 		 .material('stone')
 	   .hardness(1.5)
@@ -202,4 +201,4 @@ onEvent('item.registry', event => {
 	   .tagBlock('minecraft:mineable/pickaxe')
 	   .requiresTool(true)
 	   .harvestTool('pickaxe', 1) 
-  })
+})
