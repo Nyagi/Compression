@@ -89,7 +89,7 @@ onEvent('item.registry', event => {
 			event.create('used_simulated_' + kit + '_testing_kit')
 	  })
 	})
-//Data Devices
+//Everything else to do with lab stuff
 onEvent('item.registry', event => {
 	//Internal names for data recording devices
 		event.create('empty_lab_notebook')
@@ -100,10 +100,15 @@ onEvent('item.registry', event => {
 		event.create('un-etched_memory_cell')
 		event.create('untunned_qbit_chip')
 		event.create('empty_flake_encoder')
-		event.create('un-enscribed_blachole_holographic_cell')
+		event.create('un-enscribed_blackhole_holographic_cell')
 	//Internal names for condensed knowledge
 		event.create('small_pile_of_knowledge')
 		event.create('empty_lab_notebook')
+})
+onEvent('item.registry', event => {
+	event.create('sturdy_wooden_box')
+	event.create('iron_piston_head')
+	event.create('soil_sample')
 })
 
 //OreProcessing Chain Items
