@@ -49,7 +49,7 @@ onEvent('block.registry', event => {
 			'super_substances',
 		//vacuum
 			'nothing',
-			'QCD',
+			'qcd',
 			'virtual_particles',
 			'vacuum_energy',
 		//chrono
@@ -58,7 +58,7 @@ onEvent('block.registry', event => {
 		//spacetime
 			'inflation',
 			'wormholes',
-			'CMB',
+			'cmb',
 		//anomalous
 			'causality_breaking',
 			'entropy_violations',
