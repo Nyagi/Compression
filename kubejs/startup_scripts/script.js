@@ -109,6 +109,10 @@ onEvent('item.registry', event => {
 	event.create('sturdy_wooden_box')
 	event.create('iron_piston_head')
 	event.create('soil_sample')
+	event.create('bucket_with_salt_and_electrodes')
+	event.create('torn_off_wool_chunk')
+	event.create('slightly_unstable_mix_bag')
+	event.create('ae2_schematic')
 })
 
 //OreProcessing Chain Items

@@ -605,13 +605,18 @@ hash = "91483dcc3e32ac337c5ac3463587f23109c3932f681c4562e7b5f3187bd84c31"
 metafile = true
 
 [[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "bf653e1b062530e3603c2cda65db7ee0a8d1b76ead4c0cfdda0d191d197c878b"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-thermal.pw.toml"
 hash = "193a24fdf77dc2e55bf25bf602f8592f906344518391b567ad8ac56891842eb0"
 metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "b74d359e38f59c6cb6c916dfdc82c7ccab6197988a171396e0d8474e55a9223c"
+hash = "e6b776afed7c97e107ed03285ea1b3970a265b27a883410c3faaee27db1b6d41"
 metafile = true
 
 [[files]]

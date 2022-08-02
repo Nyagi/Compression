@@ -136,5 +136,47 @@ onEvent('recipes', event => {
       B: 'kubejs:soil_sample',
       C: 'kubejs:sturdy_wooden_box'
     })
+    //Bucket With Salt & Electrodes
+    event.shaped('kubejs:bucket_with_salt_and_electrodes', [
+        '   ',
+        'CBD',
+        ' A '
+      ], {
+        A: 'minecraft:water_bucket',
+        B: 'mekanism:salt',
+        C: 'create:copper_sheet',
+        D: 'create:zinc_nugget'
+      })
+      //Torn off chunk of wool
+      event.shapeless('8x kubejs:torn_off_wool_chunk', ['#minecraft:wool'])
+    //Crude Static Testing Kit
+    event.shaped('kubejs:crude_static_testing_kit', [
+        '   ',
+        'CBC',
+        ' A '
+      ], {
+        A: 'kubejs:bucket_with_salt_and_electrodes',
+        B: '#minecraft:wool',
+        C: 'create:iron_sheet',
+      })
+      //Slightly Unstable Mix Bag
+    event.shaped('kubejs:slightly_unstable_mix_bag', [
+        ' D ',
+        'ACB',
+        ' D '
+      ], {
+        A: 'ae2:certus_quartz_dust',
+        B: 'minecraft:redstone',
+        C: 'minecraft:charcoal',
+        D: 'minecraft:paper'
+      })
+      //Crude Entropy Testing Kit
+    event.shaped('kubejs:crude_entropy_testing_kit', [
+        'A',
+        'B'
+      ], {
+        A: 'kubejs:slightly_unstable_mix_bag',
+        B: 'kubejs:sturdy_wooden_box'
+      })
   })
 

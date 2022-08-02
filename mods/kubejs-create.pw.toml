@@ -1,0 +1,13 @@
+name = "KubeJS Create"
+filename = "kubejs-create-forge-1802.2.2-build.26.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "147df064f2f01ec65895b2650f4666437c645645"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3815884
+project-id = 429371
