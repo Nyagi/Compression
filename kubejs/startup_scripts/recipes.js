@@ -182,7 +182,7 @@ onEvent('recipes', event => {
       //Bonk (Press)
       event.recipes.createPressing('kubejs:used_crude_compaction_testing_kit',['kubejs:crude_compaction_testing_kit'])
     //Furnace Crafting
-      event.smelting('kubejs:crude_entropy_testing_kit', 'kubejs:used_crude_entropy_testing_kit')
+      event.smelting('kubejs:used_crude_entropy_testing_kit', 'kubejs:crude_entropy_testing_kit')
     //Create Assembly Line
       //Static-Test
       event.recipes.createSequencedAssembly(
