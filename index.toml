@@ -382,11 +382,11 @@ hash = "cd5375c75b6453eea519b595dd510982bb3fca6b6c3c3145a4b7d1a856df4683"
 
 [[files]]
 file = "kubejs/startup_scripts/recipes.js"
-hash = "816baee62938876145a001516b75910a558817ca60bb2da8dacb132bce21aa39"
+hash = "49be63960f3635fc4bad19fb92c6ec5e344f6222cee88f77da571eb6a2fcf90e"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "b43ccb9b94f1835228bb867ba5222df2e69e8b81f1aae624c89d08e769220fdd"
+hash = "14f49c2d3e8f1ea258c712248605ec1853e8321195f202d5162e3525a967f026"
 
 [[files]]
 file = "mods/aeinfinitybooster.pw.toml"
