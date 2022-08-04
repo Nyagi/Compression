@@ -544,6 +544,11 @@ hash = "d7bf70918b7b4f33fe50ca4f3b20cb6a3b5d49fa35ca58217190f579adac664a"
 metafile = true
 
 [[files]]
+file = "mods/critters-and-companions.pw.toml"
+hash = "866741ba0728412368c21540fed0040c9740e09cea23ff2df89cd66c9ab4a74f"
+metafile = true
+
+[[files]]
 file = "mods/cucumber.pw.toml"
 hash = "0e0d61bc01ac103f4aa61d9f37f771889dab3e01a1184bfa58dd34f069ccabba"
 metafile = true
@@ -596,6 +601,11 @@ metafile = true
 [[files]]
 file = "mods/forgiving-void.pw.toml"
 hash = "d02c52c31914afced47b4af8acf601409cb0a1efbe2ff62411b227eb18300e48"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "0394acdb8e9994013757ae0f375c3014c0f133f37c4b0e44de88bbaa7732151b"
 metafile = true
 
 [[files]]
