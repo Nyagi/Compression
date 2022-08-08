@@ -199,4 +199,4 @@ onEvent('recipes', event => {
 			// 		event.recipes.createCutting('kubejs:custom1', 'kubejs:custom1') //it's also the input and output here for the same reasons, this thing will actually create a bunch of recipes for individual machines and different data
 			// 	]).transitionalItem('kubejs:custom1') //we tell it here that this is the transitional item
 			// 
-			// }) 
+			 }) 
