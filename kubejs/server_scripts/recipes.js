@@ -42,6 +42,13 @@ onEvent('recipes', event => {
 				},
 				time: 1200 // int, specifies the amount of ticks a blockspace has to receive to convert into the output state - optional
 			})
+			//Cobble from pebbles
+			event.shaped('minecraft:cobblestone', [
+				'AA',
+				'AA'
+			], {
+				A: 'botania:pebble',
+			})
 			//Andesite Alloy
 			event.remove({output: 'create:andesite_alloy'})
 			event.shaped('create:andesite_alloy', [
@@ -193,6 +200,3 @@ onEvent('recipes', event => {
 			// 	]).transitionalItem('kubejs:custom1') //we tell it here that this is the transitional item
 			// 
 			// }) 
-			
-			
-
