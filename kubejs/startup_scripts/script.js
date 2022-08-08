@@ -15,8 +15,8 @@ onEvent('block.registry', event => {
 
 
 //Items
-	//Internal names for pack "science" progression
-	let kits = [
+//Internal names for pack "science" progression
+let kits = [
 		//electromagnetic
 			'static',
 			'magnetic',
@@ -71,8 +71,8 @@ onEvent('block.registry', event => {
 			'infinite_feedback_loops',
 			'reversing',
 			'end'
-	]
-	//Internal names for data combining
+]
+//Internal names for data combining
 //auto item builder
 //testing kits
 onEvent('item.registry', event => {
@@ -87,38 +87,38 @@ onEvent('item.registry', event => {
 			event.create('used_laboratory_' + kit + '_testing_kit')
 			event.create('simulated_' + kit + '_testing_kit')
 			event.create('used_simulated_' + kit + '_testing_kit')
-	  })
-	})
+  })
+})
 
 
-	//Internal names for data recording devices
-	let emptylabRecording = [
-		'lab_notebook', 
-		'encyclopedia',
-		'flash_drive',
-		'data_cell',
-		'flake_encoder'
-	]
-	let unLabRecording = [
-		'punched_cards', 
-		'etched_memory_cell',
-		'tunned_qbit_chip',
-		'enscribed_blackhole_holographic_cell'
-	]
+//Internal names for data recording devices
+let emptylabRecording = [
+	'lab_notebook', 
+	'encyclopedia',
+	'flash_drive',
+	'data_cell',
+	'flake_encoder'
+]
+let unLabRecording = [
+	'punched_cards', 
+	'etched_memory_cell',
+	'tunned_qbit_chip',
+	'enscribed_blackhole_holographic_cell'
+]
 //Everything else to do with lab stuff
 onEvent('item.registry', function(event) {
-    for(let i = 0; i < unLabRecording.length; i++) {
-        event.create('un'+ unLabRecording[i]);
-        for(let j = 0; j < kits.length; j++) {
-            event.create(unLabRecording[i] + '_with_' + kits[j] + '_data');
-        };
-    };
-    for( let i = 0; i < emptylabRecording.length; i++) {
-        event.create('empty_' + emptylabRecording[i]);
-        for(let j = 0; j < kits.length; j++) {
-            event.create(emptylabRecording[i] + '_with_' + kits[j] + '_data');
-        };
-    };
+	for(let i = 0; i < unLabRecording.length; i++) {
+		event.create('un'+ unLabRecording[i]);
+		for(let j = 0; j < kits.length; j++) {
+			event.create(unLabRecording[i] + '_with_' + kits[j] + '_data');
+		};
+	};
+	for( let i = 0; i < emptylabRecording.length; i++) {
+		event.create('empty_' + emptylabRecording[i]);
+		for(let j = 0; j < kits.length; j++) {
+			event.create(emptylabRecording[i] + '_with_' + kits[j] + '_data');
+		};
+	};
 });
 	
 	    /*
@@ -147,7 +147,7 @@ onEvent('item.registry', event => {
 })
 
 //OreProcessing Chain Items
-   let metalStages = [
+let metalStages = [
 	//create crushing
 	'crushed',
 	//bee
@@ -179,8 +179,8 @@ onEvent('item.registry', event => {
 	//bota+antimatter+ton of other shit to add later
 	'infinite'
 
-   ]
-   let metals = [
+]
+let metals = [
 	'iron',
 	'copper',
 	'gold',
@@ -191,13 +191,13 @@ onEvent('item.registry', event => {
 	'zinc',
 	'uranium',
 	'osmium'
-   ]
+]
 onEvent('item.registry', event => {
 	metalStages.forEach(stage => {
 		metals.forEach(material => {
 		  event.create(stage + '_' + material)
 		})
-	  })
+  })
 })
 
 //Blocks
