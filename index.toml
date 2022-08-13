@@ -410,11 +410,11 @@ hash = "34b492e230d18b0d7b9f56ac24bfdd49cf1e9d11ed21c59c1e2b20ae11e4b476"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "deec2ce6bceca2ed9b8e6b0642b1de66f6056b9ed2615e027869f14b0a408691"
+hash = "5ddbded2b5059c14f38ec70a66e376723103f070795acd6a3b5620387318b186"
 
 [[files]]
 file = "kubejs/server_scripts/spawn_stone.js"
-hash = "dedbe4966af0cd5f1096ac67a150dcfb0f838778098e8dee9c6d240978f779b9"
+hash = "977cda9c4e3d14a04b21224efbc831ee3700c6204bc79e5cfecb62c1a4a63667"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
