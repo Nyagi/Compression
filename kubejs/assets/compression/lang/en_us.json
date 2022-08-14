@@ -1,0 +1,30 @@
+{
+	"entity.crittersandcompanions.dragonfly": "Flying Rock",
+	"entity.crittersandcompanions.leaf_insect": "Living Wood",
+	
+	"item.crittersandcompanions.dragonfly_spawn_egg": "Flying Rock Spawn Egg",
+	"item.crittersandcompanions.leaf_insect_spawn_egg": "Living Wood Spawn Egg",
+	
+	"subtitles.crittersandcompanions.dragonfly.ambient": "Flying Rock buzzes",
+	"subtitles.crittersandcompanions.leaf_insect.death": "Living Rock dies",
+	"subtitles.crittersandcompanions.leaf_insect.hurt": "Living Rock hurts",
+	
+	
+	"item.botania.pebble": "Living Pebble",
+	
+	
+	"item.create.andesite_alloy": "Livisite Alloy",
+	
+	"advancement.create.andesite_alloy.desc": "Obtain some Livisite Alloy, Create's most important resource",
+	"advancement.create.andesite_casing": "The Livisite Age",
+	"advancement.create.andesite_casing.desc": "Apply Livisite Alloy to wood creating a basic casing for your machines",
+	
+	"create.ponder.andesite_tunnel.header": "Using Livisite Tunnels",
+	"create.ponder.andesite_tunnel.text_1": "Livisite Tunnels can be used to cover up your belts",
+	"create.ponder.andesite_tunnel.text_2": "Whenever an Livisite Tunnel has connections to the sides...",
+	"create.ponder.belt_casing.text_1": "Brass or Livisite Casing can be used to decorate Mechanical Belts",
+	"create.ponder.brass_funnel.text_1": "Livisite Funnels can only ever extract single items.",
+	"create.ponder.cogwheel_casing.text_1": "Brass or Livisite Casing can be used to decorate Cogwheels",
+	"create.ponder.shaft_casing.text_1": "Brass or Livisite Casing can be used to decorate Shafts"
+
+}

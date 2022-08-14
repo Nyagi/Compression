@@ -5,12 +5,12 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
-file = "kubejs/assets/create/textures/item/andesite_alloy.png"
-hash = "91571f5f8372762f52d982e5f18ead802f2848efbd2f56058dfb2e9bf84f755b"
+file = "kubejs/assets/compression/lang/en_us.json"
+hash = "d9ec06e2139f4a1d2e629f6873153418dccd3fb683889fe9ebaf85ca8df9fbdc"
 
 [[files]]
-file = "kubejs/assets/crittersandcompanions/lang/en_us.json"
-hash = "eaab42b0fedafad7bb3fd862650e1c0d3f70292aa9615de5495f4bb2c04f8816"
+file = "kubejs/assets/create/textures/item/andesite_alloy.png"
+hash = "91571f5f8372762f52d982e5f18ead802f2848efbd2f56058dfb2e9bf84f755b"
 
 [[files]]
 file = "kubejs/assets/crittersandcompanions/textures/entity/dragonfly.png"
@@ -66,7 +66,7 @@ hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
-hash = "8d6f3db48cc507f2dc6e23919e21837851738fc849cb83772b4186b03bef391d"
+hash = "1fa9e2e3af1a500d25f758ede5df91afd8fa1d0805e342cae4b5fb3695ecaeb2"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -414,7 +414,7 @@ hash = "058b245bb00d89e49e3c140665b2f46c73b10c6b667e7fc19d4cc62e97c92210"
 
 [[files]]
 file = "kubejs/server_scripts/spawn_stone.js"
-hash = "fcff7e7889a9c31d19f8a437c3370c47ef5362c71083c4e7f1665c77ff845d59"
+hash = "4adfc8408228f491f299407ace33f63fe4b827de51a4cd20898423e28f6c6fff"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
