@@ -1,4 +1,7 @@
 onEvent('recipes', event => {
+	//Living rock from pebbles
+
+	'botania:pebble'
 	//Petal Apothecary Item
 	event.remove({output: 'botania:apothecary_default'})
 	event.shaped('botania:apothecary_default', [
@@ -14,6 +17,15 @@ onEvent('recipes', event => {
 	//Remove LivingWood Tools
 	event.remove({output: 
 		[Item.of('aiotbotania:livingwood_shears', '{Damage:0}'), Item.of('aiotbotania:livingwood_sword', '{Damage:0}'), Item.of('aiotbotania:livingwood_axe', '{Damage:0}'), Item.of('aiotbotania:livingwood_pickaxe', '{Damage:0}'), Item.of('aiotbotania:livingwood_shovel', '{Damage:0}'), Item.of('aiotbotania:livingwood_hoe', '{Damage:0}'), Item.of('aiotbotania:livingwood_aiot', '{Damage:0}')]})
+		//Crafting Table
+		event.remove({output: 'minecraft:crafting_table'})
+		event.shaped('minecraft:crafting_table', [
+			'AA',
+			'BB'
+		], {
+			A: 'botania:livingwood_twig',
+			B: 'botania:livingrock'
+		})
 		//Remove Wood/Stone Tools
 		event.remove({output: 
 			[Item.of('minecraft:wooden_sword', '{Damage:0}'), Item.of('minecraft:wooden_shovel', '{Damage:0}'), Item.of('minecraft:wooden_pickaxe', '{Damage:0}'), Item.of('minecraft:wooden_axe', '{Damage:0}'), Item.of('minecraft:wooden_hoe', '{Damage:0}'), Item.of('minecraft:stone_sword', '{Damage:0}'), Item.of('minecraft:stone_shovel', '{Damage:0}'), Item.of('minecraft:stone_pickaxe', '{Damage:0}'), Item.of('minecraft:stone_axe', '{Damage:0}'), Item.of('minecraft:stone_hoe', '{Damage:0}')]})
@@ -43,11 +55,12 @@ onEvent('recipes', event => {
 				time: 1200 // int, specifies the amount of ticks a blockspace has to receive to convert into the output state - optional
 			})
 			//Cobble from pebbles
-			event.shaped('minecraft:cobblestone', [
+			event.remove({input: 'botania:pebble'})
+			event.shaped('botania:livingrock', [
 				'AA',
 				'AA'
 			], {
-				A: 'botania:pebble',
+				A: 'botania:pebble'
 			})
 			//Andesite Alloy
 			event.remove({output: 'create:andesite_alloy'})
@@ -190,6 +203,8 @@ onEvent('recipes', event => {
 			event.recipes.createPressing('kubejs:used_crude_compaction_testing_kit',['kubejs:crude_compaction_testing_kit'])
 			//Furnace Crafting
 			event.smelting('kubejs:used_crude_entropy_testing_kit', 'kubejs:crude_entropy_testing_kit')
+			//Empty Lab Notebook
+			//event.shapeless('kubejs:empty_lab_notebook', ['kubejs:ballpoint_pen', 'minecraft:writable_book'])
 			//Create Assembly Line
 			//Static-Test
 			// event.recipes.createSequencedAssembly(

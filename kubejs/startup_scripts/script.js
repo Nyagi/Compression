@@ -113,28 +113,7 @@ onEvent('item.registry', function(event) {
 			event.create(unLabRecording[i] + '_with_' + kits[j] + '_data');
 		};
 	};
-	for( let i = 0; i < emptylabRecording.length; i++) {
-		event.create('empty_' + emptylabRecording[i]);
-		for(let j = 0; j < kits.length; j++) {
-			event.create(emptylabRecording[i] + '_with_' + kits[j] + '_data');
-		};
-	};
 });
-	
-	    /*
-		event.create('empty_lab_notebook')
-		event.create('empty_encyclopedia')
-		event.create('un-punched_cards')
-		event.create('empty_flash_drive')
-		event.create('empty_data_cell')
-		event.create('un-etched_memory_cell')
-		event.create('untunned_qbit_chip')
-		event.create('empty_flake_encoder')
-		event.create('un-enscribed_blackhole_holographic_cell')
-	//Internal names for condensed knowledge
-		event.create('small_pile_of_knowledge')
-		event.create('empty_lab_notebook')
-		*/
 
 onEvent('item.registry', event => {
 	event.create('sturdy_wooden_box')
@@ -143,8 +122,10 @@ onEvent('item.registry', event => {
 	event.create('bucket_with_salt_and_electrodes')
 	event.create('torn_off_wool_chunk')
 	event.create('slightly_unstable_mix_bag')
-	event.create('ae2_schematic')
+	event.create('ae2_schematic').unstackable().maxDamage(64)
+	event.create('ballpoint_pen')
 })
+
 
 //OreProcessing Chain Items
 let metalStages = [
