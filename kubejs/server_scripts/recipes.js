@@ -26,7 +26,14 @@ onEvent('recipes', event => {
 		 'AA'
 	 ], {
 		A: 'botania:pebble',
-	})
+		})
+		//Living stick
+		event.shaped('botania:livingwood_twig', [
+			'A',
+			'A'
+		], {
+		   A: 'botania:livingwood_log',
+	   })
 
 	//Vanilla
 		//Crafting Table
@@ -254,6 +261,21 @@ onEvent('recipes', event => {
 				ingredients: ['botania:orange_petal','botania:orange_petal','botania:yellow_petal','botania:redstone_root', 'botania:livingwood_twig','create:deployer','botania:rune_earth']
 			})
 	//PureDaisy Recipes
+		//Living Wood
+		event.custom({
+			"type": "botania:state_copying_pure_daisy",
+			"input": {
+			  "type": "tag_excluding",
+			  "tag": "minecraft:logs",
+			  "exclude": [
+				{
+				  "type": "block",
+				  "block": "botania:livingwood_log"
+				}
+			  ]
+			},
+			"output": "botania:livingwood_log"
+		  })
 		//Livisite
 		event.recipes.botania.pure_daisy({
 			output: {
@@ -264,7 +286,7 @@ onEvent('recipes', event => {
 				block: 'minecraft:andesite'
 			},
 				time: 1200 // int, specifies the amount of ticks a blockspace has to receive to convert into the output state - optional
-			})
+		})
 //--------------------------------------------------------------------------------------------------\\	
 //Create Recipes
 	//Bonk (Press)		
