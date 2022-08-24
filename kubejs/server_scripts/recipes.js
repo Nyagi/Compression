@@ -1,11 +1,16 @@
-//Nuking Mods
+//Nuking Mods/Items
 onEvent('recipes', event => {
 	event.remove({mod: 'ae2'})
 	event.remove({mod: 'create'})
 	event.remove({mod: 'botania'})
 	event.remove({mod: 'mythicbotany'})
 	event.remove({mod: 'aiotbotania'})
-	event.remove({mod: 'minecraft'})
+	//dont remove minecraft entirely, too much shit to re-add, remove on item by item basis
+		//Wooden/Stone Tools Bulk remove
+		event.remove({output: 
+		[Item.of('minecraft:wooden_sword', '{Damage:0}'), Item.of('minecraft:wooden_shovel', '{Damage:0}'), Item.of('minecraft:wooden_pickaxe', '{Damage:0}'), Item.of('minecraft:wooden_axe', '{Damage:0}'), Item.of('minecraft:wooden_hoe', '{Damage:0}'), Item.of('minecraft:stone_shovel', '{Damage:0}'), Item.of('minecraft:stone_pickaxe', '{Damage:0}'), Item.of('minecraft:stone_axe', '{Damage:0}'), Item.of('minecraft:stone_hoe', '{Damage:0}'), Item.of('minecraft:stone_sword', '{Damage:0}')
+		]})
+
 })
 //Early Game Recipies
 onEvent('recipes', event => {	
@@ -58,6 +63,7 @@ onEvent('recipes', event => {
 //3x3 Recipes
 	//Vanilla
 		//Furnace
+		event.remove({output: 'minecraft:furnace'})
 		event.shaped('minecraft:furnace', [
 			'BAB',
 			'B B',
