@@ -10,6 +10,8 @@ onEvent('recipes', event => {
 		event.remove({output: 
 		[Item.of('minecraft:wooden_sword', '{Damage:0}'), Item.of('minecraft:wooden_shovel', '{Damage:0}'), Item.of('minecraft:wooden_pickaxe', '{Damage:0}'), Item.of('minecraft:wooden_axe', '{Damage:0}'), Item.of('minecraft:wooden_hoe', '{Damage:0}'), Item.of('minecraft:stone_shovel', '{Damage:0}'), Item.of('minecraft:stone_pickaxe', '{Damage:0}'), Item.of('minecraft:stone_axe', '{Damage:0}'), Item.of('minecraft:stone_hoe', '{Damage:0}'), Item.of('minecraft:stone_sword', '{Damage:0}')
 		]})
+	event.remove({mod: 'mysticalagriculture'})
+	event.remove({mod: 'mysticalagradditions'})
 
 })
 //Early Game Recipies
