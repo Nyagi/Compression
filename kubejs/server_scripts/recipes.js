@@ -25,29 +25,12 @@ onEvent('recipes', event => {
 	//Living Wood Planks
 		event.shapeless('8x kubejs:torn_off_wool_chunk', ['#minecraft:wool'])
 	//Readding Botania Flower --> Petals
+	//Tralo yelled at me cause i was doing this manually - Nyagi
 		colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
 	colors.forEach(c => {
 		event.shapeless('2x botania:'+c+'_petal',['botania:'+c+'_mystical_flower'])
     	event.shapeless('4x botania:'+c+'_petal',['botania:'+c+'_double_flower'])
 })
-/*
-		event.shapeless('2x botania:white_petal',['botania:white_mystical_flower'])
-		event.shapeless('2x botania:orange_petal',['botania:orange_mystical_flower'])
-		event.shapeless('2x botania:magenta_petal',['botania:magenta_mystical_flower'])
-		event.shapeless('2x botania:light_blue_petal',['botania:light_blue_mystical_flower'])
-		event.shapeless('2x botania:yellow_petal',['botania:yellow_mystical_flower'])
-		event.shapeless('2x botania:lime_petal',['botania:lime_mystical_flower'])
-		event.shapeless('2x botania:pink_petal',['botania:pink_mystical_flower'])
-		event.shapeless('2x botania:gray_petal',['botania:gray_mystical_flower'])
-		event.shapeless('2x botania:light_gray_petal',['botania:light_gray_mystical_flower'])
-		event.shapeless('2x botania:cyan_petal',['botania:cyan_mystical_flower'])
-		event.shapeless('2x botania:purple_petal',['botania:purple_mystical_flower'])
-		event.shapeless('2x botania:blue_petal',['botania:blue_mystical_flower'])
-		event.shapeless('2x botania:brown_petal',['botania:brown_mystical_flower'])
-		event.shapeless('2x botania:green_petal',['botania:green_mystical_flower'])
-		event.shapeless('2x botania:red_petal',['botania:red_mystical_flower'])
-		event.shapeless('2x botania:black_petal',['botania:black_mystical_flower'])
-*/
 //--------------------------------------------------------------------------------------------------\\	
 //2x2 Recipes
 	//Botania
