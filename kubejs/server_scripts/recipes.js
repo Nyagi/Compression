@@ -19,8 +19,10 @@ onEvent('recipes', event => {
 //--------------------------------------------------------------------------------------------------\\	
 //Shapeless Recipes
 	//Soil Sample
-		event.shapeless('kubejs:soil_sample', ['minecraft:dirt','minecraft:clay_ball', 'minecraft:sand', 'minecraft:gravel'])
+		event.shapeless('4x botania:livingwood_planks', ['botania:livingwood_log'])
 	//Torn off chunk of wool
+		event.shapeless('8x kubejs:torn_off_wool_chunk', ['#minecraft:wool'])
+	//Living Wood Planks
 		event.shapeless('8x kubejs:torn_off_wool_chunk', ['#minecraft:wool'])
 	//Readding Botania Flower --> Petals
 		event.shapeless('2x botania:white_petal',['botania:white_mystical_flower'])
@@ -59,6 +61,13 @@ onEvent('recipes', event => {
 		], {
 		   A: 'botania:livingwood_log',
 	   })
+	   //Living wood plank stairs
+	   event.shaped('4x botania:livingwood_planks_stairs', [
+		'A ',
+		'AA'
+	], {
+	   A: 'botania:livingwood_planks',
+   })
 
 	//Vanilla
 		//Crafting Table
@@ -198,6 +207,25 @@ onEvent('recipes', event => {
 			A: 'botania:livingrock',
 			B: 'botania:livingwood_twig'
 		})
+		//Framed Living Wood Planks
+		event.shaped('4x botania:framed_livingwood', [
+			' A ',
+			'ABA',
+			' A '
+		], {
+			A: 'botania:livingwood_planks',
+			B: 'botania:livingwood_twig'
+		})
+		//Patterned Framed Living Wood Planks
+		event.shaped('4x botania:pattern_framed_livingwood', [
+			'A A',
+			' B ',
+			'A A'
+		], {
+			A: 'botania:livingwood_planks',
+			B: 'botania:livingwood_twig'
+		})
+	//LabStuff
 	//LabStuff
 		//Sturdy Wooden Box
 		event.shaped('kubejs:sturdy_wooden_box', [
