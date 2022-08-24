@@ -119,6 +119,16 @@ onEvent('recipes', event => {
 					B: 'botania:framed_livingwood',
 					C: 'create:cogwheel'
 		})
+		//Gearbox
+		event.shaped('create:gearbox', [
+			'ACA',
+			'CBC',
+			'ACA'
+		], {
+			A: 'create:andesite_alloy',
+			B: 'create:andesite_casing',
+			C: 'create:cogwheel'
+})
 		//Create Press
 		event.shaped('create:mechanical_press', [
 					'A',
@@ -319,6 +329,17 @@ onEvent('recipes', event => {
 			},
 			"output": "botania:livingwood_log"
 		  })
+		//Living Rock
+		event.recipes.botania.pure_daisy({
+			output: {
+				name: 'botania:livingrock'
+			},
+			input: {
+				type: 'block', //object type, can be "block", "state", "blocks" or "tag"
+				block: 'minecraft:smooth_stone'
+			},
+				time: 1200 // int, specifies the amount of ticks a blockspace has to receive to convert into the output state - optional
+		})
 		//Livisite
 		event.recipes.botania.pure_daisy({
 			output: {
@@ -334,6 +355,9 @@ onEvent('recipes', event => {
 //Create Recipes
 	//Bonk (Press)		
 		event.recipes.createPressing('kubejs:used_crude_compaction_testing_kit',['kubejs:crude_compaction_testing_kit'])
+	//Deploying/RightClick
+		////////TEMPORARY RECIPE\\\\\\\\\\\\\\
+		event.shapeless('create:andesite_casing',['botania:stripped_livingwood_log', 'create:andesite_alloy'])
 	//Assembly Line
 			//Empty Lab Notebook
 			//event.shapeless('kubejs:empty_lab_notebook', ['kubejs:ballpoint_pen', 'minecraft:writable_book'])
