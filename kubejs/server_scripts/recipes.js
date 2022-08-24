@@ -25,6 +25,12 @@ onEvent('recipes', event => {
 	//Living Wood Planks
 		event.shapeless('8x kubejs:torn_off_wool_chunk', ['#minecraft:wool'])
 	//Readding Botania Flower --> Petals
+		colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
+	colors.forEach(c => {
+		event.shapeless('2x botania:'+c+'_petal',['botania:'+c+'_mystical_flower'])
+    	event.shapeless('4x botania:'+c+'_petal',['botania:'+c+'_double_flower'])
+})
+/*
 		event.shapeless('2x botania:white_petal',['botania:white_mystical_flower'])
 		event.shapeless('2x botania:orange_petal',['botania:orange_mystical_flower'])
 		event.shapeless('2x botania:magenta_petal',['botania:magenta_mystical_flower'])
@@ -41,7 +47,7 @@ onEvent('recipes', event => {
 		event.shapeless('2x botania:green_petal',['botania:green_mystical_flower'])
 		event.shapeless('2x botania:red_petal',['botania:red_mystical_flower'])
 		event.shapeless('2x botania:black_petal',['botania:black_mystical_flower'])
-
+*/
 //--------------------------------------------------------------------------------------------------\\	
 //2x2 Recipes
 	//Botania
