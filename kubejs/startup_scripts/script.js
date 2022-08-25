@@ -15,6 +15,13 @@ onEvent('block.registry', event => {
 
 
 //Items
+//Random Progression Items
+onEvent('item.registry', event => {
+	event.create('spongy_iron')
+	event.create('coked_brick')
+	event.create('livisite_brick')
+	event.create('brick_binder_composit')
+})
 //Internal names for pack "science" progression
 let kits = [
 		//electromagnetic
@@ -114,7 +121,6 @@ onEvent('item.registry', function(event) {
 		};
 	};
 });
-
 onEvent('item.registry', event => {
 	event.create('sturdy_wooden_box')
 	event.create('iron_piston_head')
@@ -204,4 +210,11 @@ onEvent('block.registry', event => {
 		   .resistance(6)
 		   .displayName('Livisite')
 		   .tagBlock('minecraft:mineable/pickaxe')
+  //Coked Living Rock
+    event.create('coked_livingrock')
+  			.material('stone')
+			.hardness(2.5)
+			.resistance(6)
+			.displayName('Coked Livingrock')
+			.tagBlock('minecraft:mineable/pickaxe')
 })

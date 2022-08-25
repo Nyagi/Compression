@@ -30,6 +30,8 @@ onEvent('recipes', event => {
 	colors.forEach(c => {
 		event.shapeless('2x botania:'+c+'_petal',['botania:'+c+'_mystical_flower'])
     	event.shapeless('4x botania:'+c+'_petal',['botania:'+c+'_double_flower'])
+	//Glimmiring Living Wood
+	event.shapeless('botania:glimmering_livingwood', ['botania:livingwood', 'minecraft:glowstone_dust'])
 })
 //--------------------------------------------------------------------------------------------------\\	
 //2x2 Recipes
@@ -40,7 +42,7 @@ onEvent('recipes', event => {
 		event.shaped('botania:livingrock', [
 		 'AA',
 		 'AA'
-	 ], {
+		 ], {
 		A: 'botania:pebble',
 		})
 		//Living stick
@@ -54,9 +56,24 @@ onEvent('recipes', event => {
 	   event.shaped('4x botania:livingwood_planks_stairs', [
 		'A ',
 		'AA'
-	], {
+		], {
 	   A: 'botania:livingwood_planks',
-   })
+  		})
+		//Livingrock Bricks
+		event.shaped('4x botania:livingrock_bricks', [
+			'AB',
+			'BA'
+		], {
+			A: 'botania:livingrock',
+			B: 'kubejs:livisite_brick'
+		})
+		//Livingwood no sides
+		event.shaped('4x botania:livingwood', [
+			'AA',
+			'AA'
+		], {
+			A: 'botania:livingwood_log'
+		})
 
 	//Vanilla
 		//Crafting Table
@@ -89,6 +106,27 @@ onEvent('recipes', event => {
 		], {
 			A: 'botania:livingrock',
 			B: 'minecraft:cobblestone'
+		})
+	//Immersive Engineering
+		//Cokebrick Slab
+		event.remove({output: 'immersiveengineering:slab_cokebrick'})
+		event.shaped('2x immersiveengineering:slab_cokebrick', [
+			'   ',
+			'ABA',
+			'AAA'
+		], {
+			A: 'kubejs:livisite_brick',
+			B: 'minecraft:brick_slab'
+		})
+		//Cokebrick
+		event.remove({output: 'immersiveengineering:cokebrick'})
+		event.shaped('immersiveengineering:cokebrick', [
+			'A',
+			'B',
+			'A'
+		], {
+			A: 'immersiveengineering:slab_cokebrick',
+			B: 'kubejs:brick_binder_composit'
 		})
 	//Create
 		//Shaft
@@ -128,7 +166,7 @@ onEvent('recipes', event => {
 			A: 'create:andesite_alloy',
 			B: 'create:andesite_casing',
 			C: 'create:cogwheel'
-})
+		})
 		//Create Press
 		event.shaped('create:mechanical_press', [
 					'A',
@@ -224,7 +262,25 @@ onEvent('recipes', event => {
 			A: 'botania:livingwood_planks',
 			B: 'botania:livingwood_twig'
 		})
-	//LabStuff
+		//Diluted Mana Pool
+		event.shaped('botania:diluted_pool', [
+			'   ',
+			'A A',
+			'AAA'
+		], {
+			A: 'kubejs:coked_livingrock'
+		})
+		//Mana Spreader
+		event.shaped('botania:mana_spreader', [
+			'BCB',
+			'BAD',
+			'BCB'
+		], {
+			A: 'botania:diluted_pool',
+			B: 'botania:livingwood',
+			C: 'botania:glimmering_livingwood',
+			D: 'minecraft:yellow_stained_glass'
+		})
 	//LabStuff
 		//Sturdy Wooden Box
 		event.shaped('kubejs:sturdy_wooden_box', [
@@ -303,6 +359,7 @@ onEvent('recipes', event => {
 //--------------------------------------------------------------------------------------------------\\
 //Botania	
 	//Petal Apothecary Recipes
+		//Functional Fluora
 		//PureDaisy
 			event.recipes.botania.petal_apothecary({
 				output: 'botania:pure_daisy',
@@ -313,6 +370,12 @@ onEvent('recipes', event => {
 				output: 'botania:rannuncarpus',
 				ingredients: ['botania:orange_petal','botania:orange_petal','botania:yellow_petal','botania:redstone_root', 'botania:livingwood_twig','create:deployer','botania:rune_earth']
 			})
+		//Generating Fluora
+		//Endoflame
+		event.recipes.botania.petal_apothecary({
+			output: 'botania:endoflame',
+			ingredients: ['botania:brown_petal','botania:brown_petal','botania:red_petal','botania:light_gray_petal', 'botania:livingwood_twig','create:blaze_burner']
+		})
 	//PureDaisy Recipes
 		//Living Wood
 		event.custom({
@@ -353,11 +416,48 @@ onEvent('recipes', event => {
 		})
 //--------------------------------------------------------------------------------------------------\\	
 //Create Recipes
-	//Bonk (Press)		
+	//Bonk (Press)
+		//Used Crude Compaction Testing Kit
 		event.recipes.createPressing('kubejs:used_crude_compaction_testing_kit',['kubejs:crude_compaction_testing_kit'])
+		//Cracked Living Rock Brick
+		event.recipes.createPressing('botania:cracked_livingrock_bricks',['botania:livingrock_bricks'])
+		//Botania Petals to dye
+		colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
+	colors.forEach(c => {
+		event.recipes.createPressing('minecraft:'+c+'_dye',['botania:'+c+'_petal'])
+	})
 	//Deploying/RightClick
 		////////TEMPORARY RECIPE\\\\\\\\\\\\\\
 		event.shapeless('create:andesite_casing',['botania:stripped_livingwood_log', 'create:andesite_alloy'])
+	//MixyMix
+		//NoHeat
+		//Brick Binder Composit
+		event.recipes.createMixing('2x kubejs:brick_binder_composit', [
+			'minecraft:charcoal',
+			'minecraft:slime_ball',
+			'minecraft:sand',
+			'minecraft:clay_ball'
+		  ])
+		//Heated
+		//Livisite Bricks
+		event.recipes.createMixing('kubejs:livisite_brick', [
+			'minecraft:charcoal',
+			'minecraft:charcoal',
+			'minecraft:coal',
+			'create:andesite_alloy',
+			'minecraft:clay_ball',
+			'minecraft:clay_ball'
+		  ]).heated()
+		//Coked Livingrock  
+		event.recipes.createMixing('4x kubejs:coked_livingrock', [
+			'botania:cracked_livingrock_bricks',
+			'botania:cracked_livingrock_bricks',
+			'botania:cracked_livingrock_bricks',
+			'botania:cracked_livingrock_bricks',
+			'#forge:coal_coke'
+		]).heated()
+		//SuperHeated
+
 	//Assembly Line
 			//Empty Lab Notebook
 			//event.shapeless('kubejs:empty_lab_notebook', ['kubejs:ballpoint_pen', 'minecraft:writable_book'])
