@@ -187,6 +187,16 @@ onEvent('recipes', event => {
 				B: 'create:shaft',
 				C: 'botania:livingwood_planks_stairs'
 		})
+		//Empty Blaze Burner
+		event.shaped('create:empty_blaze_burner', [
+			'A A',
+			'ABA',
+			'ACA'
+		], {
+		A: 'pneumaticcraft:ingot_iron_compressed',
+		B: 'minecraft:netherrack',
+		C: 'minecraft:blast_furnace'
+		})
 	//Botania
 		//Petal Apothecary
 		event.shaped('botania:apothecary_default', [
