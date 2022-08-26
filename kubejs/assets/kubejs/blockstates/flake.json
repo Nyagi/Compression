@@ -8,6 +8,15 @@
 				"model": "kubejs:block/flake", "y":90, "x":90
 			},
 			{
+				"model": "kubejs:block/flake", "x":90
+			},
+			{
+				"model": "kubejs:block/flake", "x":180
+			},
+			{
+				"model": "kubejs:block/flake", "y":90
+			},
+			{
 				"model": "kubejs:block/flake", "y":180
 			},
 			{
