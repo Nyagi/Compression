@@ -410,7 +410,7 @@ hash = "34b492e230d18b0d7b9f56ac24bfdd49cf1e9d11ed21c59c1e2b20ae11e4b476"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "3895082c4cdf14b10d695ad9c82cef8bde0486f539c556fc3cbabf6350f3b06b"
+hash = "c0ce5cd3b0a82e84fa9a3ff514a84761db036886a75f36fe9de9f2aa5d69c3c9"
 
 [[files]]
 file = "kubejs/server_scripts/spawn_stone.js"
@@ -418,7 +418,7 @@ hash = "cde752ff6181be41037f94b41f35cf83dbd6facb765ab5a6c816054f699ba625"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "0c4a58fbf423106a55b5e4b7510b36fd144df9f728ff6788e399b76663675b74"
+hash = "c5814627f0b0f4be877472ddca3e385654966b78c80982a1b81f124a392c648b"
 
 [[files]]
 file = "mods/aeinfinitybooster.pw.toml"

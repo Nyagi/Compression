@@ -1,3 +1,12 @@
+/* > This is the master .js file for all recipes in the pack, each major "stage" in the game is divided up into
+||	 onEvent functions with their own sub catagories inside.
+||   Bulk deletions are found in //Nuking Mods/Items, where invidiual delitions will be found on the line above
+||   the recipe for where that item appears first
+||   -Nyagi
+||   
+||   Collaborators: Nyagi, Tralomine, Lylythii
+||*/
+
 //Nuking Mods/Items
 onEvent('recipes', event => {
 	event.remove({mod: 'ae2'})
@@ -433,7 +442,7 @@ onEvent('recipes', event => {
 		event.recipes.createPressing('botania:cracked_livingrock_bricks',['botania:livingrock_bricks'])
 		//Botania Petals to dye
 		colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black']
-	colors.forEach(c => {
+		colors.forEach(c => {
 		event.recipes.createPressing('minecraft:'+c+'_dye',['botania:'+c+'_petal'])
 	})
 	//Deploying/RightClick

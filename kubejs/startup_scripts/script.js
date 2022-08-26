@@ -1,3 +1,11 @@
+/* > This is the master .js file for all blocks & items in the pack.
+||   Items & Blocks are seperated, Laboratory type items are auto generated using .forEach, and thus you wont see
+||   them all listed individually, that is only visible in REI using @KubeJS
+||   -Nyagi
+||   
+||   Collaborators: Nyagi, Tralomine, Lylythii
+||*/
+
 // priority: 0
 /*
 console.info('Hello, World! (You will only see this line once in console, during startup)')
@@ -96,8 +104,6 @@ onEvent('item.registry', event => {
 			event.create('used_simulated_' + kit + '_testing_kit')
   })
 })
-
-
 //Internal names for data recording devices
 let emptylabRecording = [
 	'lab_notebook', 
@@ -121,6 +127,7 @@ onEvent('item.registry', function(event) {
 		};
 	};
 });
+//Item sub components
 onEvent('item.registry', event => {
 	event.create('sturdy_wooden_box')
 	event.create('iron_piston_head')
